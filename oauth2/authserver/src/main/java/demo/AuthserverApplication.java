@@ -97,8 +97,8 @@ public class AuthserverApplication extends WebMvcConfigurerAdapter {
 		@Override
 		public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
 			clients.inMemory()
-					.withClient("acme")
-					.secret("acmesecret")
+					.withClient("475")
+					.secret("cadusecret")
 					.authorizedGrantTypes("authorization_code", "refresh_token",
 							"password").scopes("openid");
 		}
